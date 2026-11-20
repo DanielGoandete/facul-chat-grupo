@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facul Chat Grupo • Chat em tempo real</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <aside><div class="logo"><span>Facul Chat Grupo</span></div><p class="eyebrow">CONVERSAS EM TEMPO REAL</p><h1>Uma conversa.<br>Muitas conexões.</h1><p>Entre na sala e troque mensagens instantaneamente com quem está por aqui.</p><div class="room"># sala-geral <span>Canal público</span></div><h2>Na sala <span id="count">0</span></h2><ul id="users"></ul></aside>
+    <section class="chat"><header><div><h2>Sala geral</h2><p>Seu espaço para trocar ideias</p></div><span id="status" role="status">Desconectado</span></header>
+      <form id="join"><label for="name">Como você quer ser chamado?</label><div class="row"><input id="name" maxlength="30" required placeholder="Seu nome" autocomplete="nickname"><button>Entrar no chat →</button></div></form>
+      <div id="messages" role="log" aria-label="Mensagens da conversa" aria-live="polite"><p id="empty">As mensagens da sala aparecerão aqui.</p></div>
+      <p id="error" role="alert"></p>
+      <form id="composer"><label class="sr-only" for="text">Mensagem</label><div class="row"><input id="text" maxlength="1000" placeholder="Entre para começar a conversar…" required disabled autocomplete="off"><button id="send" disabled>Enviar →</button></div><small>Até 1.000 caracteres · Enter para enviar</small></form>
+    </section>
+  </main>
+</body></html>
